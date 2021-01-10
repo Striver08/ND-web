@@ -14,43 +14,83 @@
     <title>Navkaar Decors</title>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-  <a class="navbar-brand" href="#">Navkaar Decors</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-        <div class="bg"></div>
-        <p class="py-5 text-center"></p>
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav mr-auto">
-      <li class="nav-item active">
-        <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="/about.html">About</a>
-      </li>
-         <li class="nav-item">
-        <a class="nav-link" href="/contact.html">Contact Us</a>
-      </li>
-       <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Type of Residence
-        </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="#">Plot</a>
-          <a class="dropdown-item" href="#">Apartment</a>
-          <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="#">Villa</a>
-            <a class="dropdown-item" href="#">Write for us</a>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-warning">
+      <a class="navbar-brand" href="#">Navkaar Decors</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-item nav-link active" href="#">HOME <span class="sr-only">(current)</span></a>
+          <a class="nav-item nav-link" href="#">ABOUT US</a>
+          <a class="nav-item nav-link" href="#">PROJECTS</a>
+          <a class="nav-item nav-link" href="#">SERVICES</a>
+          <a class="nav-item nav-link" href="#">CONTACT US</a>
         </div>
-      </li>
-    </ul>
-    <form class="form-inline my-2 my-lg-0">
-      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-    </form>
-  </div>
-</nav>
+      </div>
+    </nav>
+
+    <div>
+      <br>
+    </div>
+
+    <div class="main-slider" id="home">
+    
+    
+      <div id="carousel-example-2" class="carousel slide carousel-slide" data-ride="carousel">
+     <!--Indicators-->
+        <ol class="carousel-indicators">
+          <li data-target="#carousel-example-2" data-slide-to="0" class=""></li>
+          <li data-target="#carousel-example-2" data-slide-to="1" class="active"></li>
+          <li data-target="#carousel-example-2" data-slide-to="2" class=""></li>
+          <li data-target="#carousel-example-2" data-slide-to="3" class=""></li>
+          <li data-target="#carousel-example-2" data-slide-to="4" class=""></li>
+        </ol>
+     <!--/.Indicators-->
+     <!--Slides-->
+        <div class="carousel-inner" role="listbox">
+
+          <div class="carousel-item">
+            <div class="view"><img class="d-block w-100" src="static/fancybox_overlay.png" alt="Slider-1"></div>
+          </div>
+
+          <div class="carousel-item active">
+            <div class="view"><img class="d-block w-100" src="static/banner.jpg" alt="Slider-2"></div>  
+          </div>
+
+          <div class="carousel-item">
+            <div class="view"><img class="d-block w-100" src="static/minimalist.jpg" alt="Slider-3"></div>  
+          </div>
+
+          <div class="carousel-item">
+            <div class="view"><img class="d-block w-100" src="static/industrial.jpg" alt="Slider-4"></div>  
+          </div>
+
+          <div class="carousel-item">
+            <div class="view"><img class="d-block w-100" src="static/modern.jpg" alt="Slider-5"></div>  
+          </div>
+
+          <div class="carousel-item">
+            <div class="view"><img class="d-block w-100" src="static/industrial.jpg" alt="Slider-6"></div>  
+          </div>
+        
+        </div>
+     <!--/.Slides-->
+     <!--Controls-->
+
+     <a class="carousel-control-prev" href="#carousel-example-2" role="button" data-slide="prev">
+         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+         <span class="sr-only">Previous</span>
+     </a>
+     <a class="carousel-control-next" href="#carousel-example-2" role="button" data-slide="next">
+         <span class="carousel-control-next-icon" aria-hidden="true"></span>
+         <span class="sr-only">Next</span>
+     </a>
+     <!--/.Controls-->
+ </div>
+     </div>
+
       <div class="container my-4">
         <div class="row featurette d-flex justify-content-center align-item-center">
           <div class="col-md-7">
@@ -69,7 +109,7 @@
               </p>
           </div>
           <div class="col-md-5">
-            <img class="featurette-image img-fluid mx-auto" src="slider-2.jpg">
+            <img class="featurette-image img-fluid mx-auto" src="static/scandinavian.jpg">
           </div>
         </div>
       </div>
@@ -80,61 +120,11 @@
               <p class="lead">For a long time, <b>interior design</b> has been viewed as only making the aesthetics of a space more beautiful to the eye. Due to this, research for specific cases of how interior design can impact an audience is few. Four different journals that have all conducted different kinds of research will be included within this paper. These journals touch on different aspects of interior design that effect the end users, things such as lighting, color, scale of furniture, or even the way seating is arranged is discussed. Within all four of these journals aspects of interior design that is usually overlooked is brought to the front to help educate people about how much impact interior design can have on the people who use the spaces that they design.</p>
           </div>
           <div class="col-md-5">
-            <img class="featurette-image img-fluid mx-auto" src="slider-4.jpg">
+            <img class="featurette-image img-fluid mx-auto" src="static/mid-century-modern.jpg">
           </div>
         </div>
           <br/>
-      <div class="main-slider" id="home">
-    
-    
-     <div id="carousel-example-2" class="carousel slide carousel-slide" data-ride="carousel">
-    <!--Indicators-->
-    <ol class="carousel-indicators">
-        <li data-target="#carousel-example-2" data-slide-to="0" class=""></li>
-        <li data-target="#carousel-example-2" data-slide-to="1" class="active"></li>
-        <li data-target="#carousel-example-2" data-slide-to="2" class=""></li>
-        <li data-target="#carousel-example-2" data-slide-to="3" class=""></li>
-        <li data-target="#carousel-example-2" data-slide-to="4" class=""></li>
-        <li data-target="#carousel-example-2" data-slide-to="5" class=""></li>
-    </ol>
-    <!--/.Indicators-->
-    <!--Slides-->
-    <div class="carousel-inner" role="listbox">
-        <div class="carousel-item">
-          <div class="view"><img class="d-block w-100" src="slider-6.jpg" alt="Slider-1"></div>
-        </div>
-        <div class="carousel-item active">
-         <div class="view"><img class="d-block w-100" src="slider-7.jpg" alt="Slider-2"></div>  
-        </div>
-        <div class="carousel-item">
-         <div class="view"><img class="d-block w-100" src="slider5.jpg" alt="Slider-3"></div>  
-        </div>
-        <div class="carousel-item">
-         <div class="view"><img class="d-block w-100" src="slider4.jpg" alt="Slider-4"></div>  
-        </div>
-        <div class="carousel-item">
-         <div class="view"><img class="d-block w-100" src="slider-1.jpg" alt="Slider-5"></div>  
-        </div>
-        <div class="carousel-item">
-         <div class="view"><img class="d-block w-100" src="slider-8.jpg" alt="Slider-6"></div>  
-        </div>
-         <div class="carousel-item">
-         <div class="view"><img class="d-block w-100" src="slider-8.jpg" alt="Slider-6"></div>  
-        </div>
-    </div>
-    <!--/.Slides-->
-    <!--Controls-->
-    <a class="carousel-control-prev" href="#carousel-example-2" role="button" data-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
-    </a>
-    <a class="carousel-control-next" href="#carousel-example-2" role="button" data-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="sr-only">Next</span>
-    </a>
-    <!--/.Controls-->
-</div>
-    </div>
+
           <div class="album py-5 bg-light">
         <div class="container">
 
