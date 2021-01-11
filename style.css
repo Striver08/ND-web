@@ -1,3 +1,6 @@
 #img-size {
     height: "10";
 }
+#brd-rad {
+    border-radius: 24px;
+}
