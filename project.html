@@ -24,12 +24,12 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav">
-          <div style="margin: 10px width: 10px"><img src="static/logo1.jpg" style="width: 90px" ></div>
+          <div style="margin: 10px; width: 10px"><img src="static/logo1.jpg" style="width: 90px" ></div>
           <a style="margin-top: 20px; margin-left: 20px; font-size: 22px" class="nav-item nav-link active" href="#">HOME <span class="sr-only">(current)</span></a>
           <a style="margin-top: 20px; margin-left: 10px; font-size: 22px" class="nav-item nav-link" href="#">ABOUT US</a>
           <a style="margin-top: 20px; margin-left: 10px; font-size: 22px" class="nav-item nav-link" href="#">PROJECTS</a>
           <a style="margin-top: 20px; margin-left: 10px; font-size: 22px" class="nav-item nav-link" href="#">SERVICES</a>
-          <a style="margin-top: 20px; margin-left: 10px; font-size: 22px" class="nav-item nav-link" href="#">CONTACT US</a>
+          <a style="margin-top: 20px; margin-left: 10px; font-size: 22px" class="nav-item nav-link" href="#intro">CONTACT US</a>
         </div>
       </div>
     </nav>
@@ -179,7 +179,7 @@
     </div>
         <br>
 
-      <div class="text-center text-warning">
+      <div id = "intro" class="text-center text-warning">
         <button class="btn btn-warning btn-lg rounded-pill" >
         <h2 style="color: black; font-weight: 350; font-family: sans-serif;"> <b> Meet Our Founder </b> </h2></button>
       </div>
@@ -206,13 +206,19 @@
         <h2 style="color: black; font-weight: 350; font-family: sans-serif;"> <b> Our Services </b> </h2></button>
       </div>
 
-      <div class="container my-4" >
-        <div class="card-deck row" >
+      <div class="container my-4 align-items-center" >
+        <div class="card-deck" >
+
+
+
           <div class="card border-warning" style="max-width: 22rem;">
-            
+            <div class="text-center" >
+              <img class="img-fluid"  src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pg0KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDE5LjAuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPg0KPHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJDYXBhXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB2aWV3Qm94PSIwIDAgNTEyIDUxMiIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgNTEyIDUxMjsiIHhtbDpzcGFjZT0icHJlc2VydmUiPg0KPHBhdGggc3R5bGU9ImZpbGw6I0ZFQTgzMjsiIGQ9Ik00ODIsMzE2djEwNUgzMFYzMTZjMC03My41LDM2LjQtMTM4LjYsOTEtMTc5LjdsMTUsNDQuN2wxNS02My45QzE4Mi41LDEwMC42LDIxOC4yLDkxLDI1Niw5MQ0KCXM3My41LDkuNiwxMDUsMjYuMWwxNSw2My45bDE1LTQ0LjdDNDQ1LjYsMTc3LjQsNDgyLDI0Mi41LDQ4MiwzMTZ6Ii8+DQo8cGF0aCBzdHlsZT0iZmlsbDojRkU5OTIzOyIgZD0iTTQ4MiwzMTZ2MTA1SDI1NlY5MWMzNy44LDAsNzMuNSw5LjYsMTA1LDI2LjFsMTUsNjMuOWwxNS00NC43QzQ0NS42LDE3Ny40LDQ4MiwyNDIuNSw0ODIsMzE2eiIvPg0KPHBhdGggc3R5bGU9ImZpbGw6I0ZFREI0MTsiIGQ9Ik0zMzEsMTA2djE1MGMwLDguMzk5LTYuNTk5LDE1LTE1LDE1SDE5NmMtOC40MDEsMC0xNS02LjYwMS0xNS0xNVYxMDZjMC0yNC45MDEsMjAuMDk5LTQ1LDQ1LTQ1aDYwDQoJQzMxMC45MDEsNjEsMzMxLDgxLjA5OSwzMzEsMTA2eiIvPg0KPHBhdGggc3R5bGU9ImZpbGw6I0ZDQkYyOTsiIGQ9Ik0zNzYsMjQxYzguMjkxLDAsMTUtNi43MDksMTUtMTV2LTg5LjY5MmMtOS40ODEtNy4xMzYtMTkuNDM4LTEzLjY0OS0zMC0xOS4yMzVWMjI2DQoJQzM2MSwyMzQuMjkxLDM2Ny43MDksMjQxLDM3NiwyNDF6Ii8+DQo8Zz4NCgk8cGF0aCBzdHlsZT0iZmlsbDojRkVEQjQxOyIgZD0iTTEzNiwyNDFjOC4yOTEsMCwxNS02LjcwOSwxNS0xNVYxMTcuMDcyYy0xMC41NjIsNS41ODctMjAuNTE5LDEyLjEtMzAsMTkuMjM1VjIyNg0KCQlDMTIxLDIzNC4yOTEsMTI3LjcwOSwyNDEsMTM2LDI0MXoiLz4NCgk8cGF0aCBzdHlsZT0iZmlsbDojRkVEQjQxOyIgZD0iTTUxMiw0MjFjMCwxNi41LTEzLjUsMzAtMzAsMzBIMzBjLTE2LjUsMC0zMC0xMy41LTMwLTMwczEzLjUtMzAsMzAtMzBoNDUyDQoJCUM0OTguNSwzOTEsNTEyLDQwNC41LDUxMiw0MjF6Ii8+DQo8L2c+DQo8Zz4NCgk8cGF0aCBzdHlsZT0iZmlsbDojRkNCRjI5OyIgZD0iTTMxNiwyNzFoLTYwVjYxaDMwYzI0LjkwMSwwLDQ1LDIwLjA5OSw0NSw0NXYxNTBDMzMxLDI2NC4zOTksMzI0LjQwMSwyNzEsMzE2LDI3MXoiLz4NCgk8cGF0aCBzdHlsZT0iZmlsbDojRkNCRjI5OyIgZD0iTTUxMiw0MjFjMCwxNi41LTEzLjUsMzAtMzAsMzBIMjU2di02MGgyMjZDNDk4LjUsMzkxLDUxMiw0MDQuNSw1MTIsNDIxeiIvPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPC9zdmc+DQo=" />
+            </div>
+            <hr>
             <div class="card-body text-warning text-center">
-                    <p class="card-text"><h5><b>TURNKEY SOLUTIONS</b></h5></p>
-                  </div>
+                    <p class="card-text text-center "><h5><b>TURNKEY SOLUTIONS</b></h5></p>
+            </div>
           </div>
 
             <div class="card border-warning" style="max-width: 22rem;">
@@ -230,7 +236,7 @@
             </div>
           </div>
           <br>
-          <div class="card-deck row" >
+          <div class="card-deck" >
             <div class="card border-warning" style="max-width: 22rem;">
               
               <div class="card-body text-warning text-center">
@@ -440,6 +446,7 @@
           </div>
         </div>
         
+
      <div class="container my-4">
       <div class="row mb-2">
 
