@@ -15,17 +15,19 @@
 
     <title>Navkaar Decors</title>
   </head>
-  <body background="static/bg1.png">
-    <!-- Code has been changed -->
+
+  <body background="static/bg1.png" >  <!--  background="static/bg1.png" --> 
+  
     <nav class="navbar navbar-expand-lg navbar-light bg-warning">
-     <!-- <a class="navbar-brand" href="#">Navkaar Decors</a>-->
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav">
-          <div style="margin: 10px; width: 10px"><img src="static/logo1.jpg" style="width: 90px" ></div>
-          <a style="margin-top: 20px; margin-left: 20px; font-size: 22px" class="nav-item nav-link active" href="#">HOME <span class="sr-only">(current)</span></a>
+          <a style="margin-top: 20px; margin-left: 20px; font-size: 22px" class="nav-item nav-link active" href="#">
+            <div><img src="static/logo1.jpg" style="width: 90px" ></div>
+          </a>
+          <a style="margin-top: 20px; margin-left: 20px; font-size: 22px" class="nav-item nav-link active" href="#">HOME</a>
           <a style="margin-top: 20px; margin-left: 10px; font-size: 22px" class="nav-item nav-link" href="#">ABOUT US</a>
           <a style="margin-top: 20px; margin-left: 10px; font-size: 22px" class="nav-item nav-link" href="#">PROJECTS</a>
           <a style="margin-top: 20px; margin-left: 10px; font-size: 22px" class="nav-item nav-link" href="#">SERVICES</a>
@@ -34,14 +36,10 @@
       </div>
     </nav>
 
-    <div>
-      <br>
-    </div>
+    <br>
 
     
     <div class="main-slider" id="home">
-    
-    
       <div id="carousel-example-2" class="carousel slide carousel-slide img-size" data-ride="carousel">
      <!--Indicators-->
         <ol class="carousel-indicators img-size">
@@ -78,13 +76,14 @@
         </div>
      <!--/.Slides-->
      <!--Controls-->
-          <a class="carousel-control-prev" href="#carousel-example-2" role="button" data-slide="prev">
+          <a class="carousel-control-prev"  href="#carousel-example-2" role="button" data-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
+            <span class="sr-only text-dark"> <h3> Previous </h3> </span>
           </a>
           <a class="carousel-control-next" href="#carousel-example-2" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
+            <span class="sr-only text-dark "> <h3>Next</h3> </span>
+            <span class="carousel-control-next-icon icon"></span>
+            
           </a>
      <!--/.Controls-->
       </div>
@@ -277,10 +276,10 @@
     </div>
 
 
-<br><br>
+<br><br><br>
 
-  <div class=" bg-light"  >
-    <br>
+    <!-- What we do started -->
+
     <div class="text-center text-warning">
       <h2 class=" text-uppercase "> <b> What We Do </b> </h2>
     </div>
@@ -288,7 +287,8 @@
     <div class="container" >
       <div class="row row-cols-1 row-cols-md-3">
 
-        <div class=" col card border-warning">
+        <div class="col" >
+        <div class="card h-100 border-warning">
           <img class="card-img-top" src="static/coastal.jpg" alt="Card image cap">
           <div class="card-body">
             <h5 class="card-title">Commercial Work</h5>
@@ -296,8 +296,10 @@
             <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
           </div>
         </div>
+        </div>
 
-        <div class=" col card border-warning">
+        <div class="col" >
+        <div class="card h-100 border-warning">
           <img class="card-img-top" src="static/coastal.jpg" alt="Card image cap">
           <div class="card-body">
             <h5 class="card-title">Residential Work</h5>
@@ -305,8 +307,10 @@
             <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
           </div>
         </div>
+        </div>
 
-        <div class="col card border-warning">
+        <div class="col" >
+        <div class="card h-100 border-warning">
           <img class="card-img-top" src="static/coastal.jpg" alt="Card image cap">
           <div class="card-body">
             <h5 class="card-title">Corporate Work</h5>
@@ -314,14 +318,19 @@
             <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
           </div>
         </div>
+        </div>
+
       </div>
-      <br>
+
     </div>
 
+    <!-- What we do ended -->
 
 <br><br>
 
-        <div class="album py-5 bg-light">
+    <!--Projects Detail with images Started-->
+
+        <div class="album py-5">
           <div class="container">
             <div class="row">
               <div class="col-md-4">
@@ -464,10 +473,55 @@
             </div>
           </div>
         </div>
-        
+  
+      <!--Projects Detail with images Ended-->        
 
-     <div class="container my-4">
-      <div class="row mb-2">
+      <div class="container border-warning " style="width: 800px;" >
+
+        <div class="text-center" >
+          <h1>Shoot an Email</h1>
+        </div>
+
+        <div class="border-warning " >
+          <form action="https://getform.io/f/79995097-d837-4ef9-9c1b-f326bf400894" method="POST">
+
+            <div class="form-group row " >
+              <label for="name" class="col-sm-2 col-form-label" >Full Name: </label>
+              <div class="col-sm-10">
+                <input type="text" name="name" id="name" class="form-control" >
+              </div>
+            </div> 
+            <br>
+            <div class="form-group row " >
+              <label for="email" class="col-sm-2 col-form-label" >Email id: </label>
+              <div class="col-sm-10">
+                <input type="text" name="email" id="email" class="form-control" >
+              </div>
+            </div> 
+            <br>
+            <div class="form-group row " >
+              <label for="msg" class="col-sm-2 col-form-label" >Enter your queries:  </label>
+              <div class="col-sm-10">
+                <input type="textarea" name="message" id="msg" class="form-control" >
+              </div>
+            </div> 
+            <div class="form-group text-center " >
+              <input type="submit" name="submit">
+            </div>
+            
+        
+          </form>
+
+        </div>
+        <br>
+      </div>
+
+
+
+
+
+      <div class="container" >
+      <div class=" row mb-2">
 
         <div class="col-md-6">
           <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
@@ -488,7 +542,7 @@
             <div class="col p-4 d-flex flex-column position-static">
               <strong class="d-inline-block mb-2 text-warning"><h4>Connect With Us</h4></strong>
               <h3 class="mb-0">Contact Number and E-Mail</h3>
-                <p class="mb-auto"><strong>Contact Number : 8512032088 <br/>E-Mail : sidchaturvedi.2000@gmail.com</strong></p>
+                <p class="mb-auto"><strong>Contact Number : ----------- <br/>E-Mail : ------------------</strong></p>
                 <a href="mailto:sidchaturvedi.2000@gmail.com" class="stretched-link"><strong>Click here to mail us</strong></a>
             </div>
             <div class="col-auto d-none d-lg-block">
@@ -498,14 +552,39 @@
         </div>
       </div>
       </div>
-    </div>
+
+      
+<br><br><br><br>
+
+        
+
+
+      </div>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
-
-
 
   </body>
 </html>
