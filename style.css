@@ -47,7 +47,7 @@ body {
 }
 
 .hoveri:hover{
-    transform: translateY(-10px);
+    transform: translateY(-15px);
 }
 
 .loader {
@@ -84,4 +84,12 @@ body {
     background-color: #222;
     color: #e6e6e6;
     border-color: #e6e6e6;
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
+    height: 100px;
+    width: 100px;
+    color: black;
+    
+ 
 }
