@@ -22,33 +22,38 @@
   <div class="loader">
     <img src="static/loading.gif" />
   </div>
-
   <div class="switch">Dark mode:              
     <span class="inner-switch">OFF</span>
   </div>
 
-  <nav class="navbar navbar-expand-lg navbar-light bg-warning">
+  
+  <div id="navbar">  
+  <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-warning">
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
       aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-      <div class="navbar-nav">
-        <a style="margin-top: 20px; margin-left: 20px; font-size: 22px" class="nav-item nav-link active" href="#">
+      <div id="navbar" class="navbar-nav">
+        <a id="text" style="margin-top: 20px; margin-left: 20px; font-size: 22px" class="nav-item nav-link active" href="#">
           <!--  <div><img src="static/logo1.jpg" style="width: 90px" ></div> -->
         </a>
-        <a style="margin-top: 20px; margin-left: 20px; font-size: 22px" class="nav-item nav-link active"
+        <a id="text" style="margin-top: 20px; margin-left: 20px; font-size: 22px" class="nav-item nav-link active"
           href="#">HOME</a>
-        <a style="margin-top: 20px; margin-left: 10px; font-size: 22px" class="nav-item nav-link" href="#me">ABOUT
+        <a id="text" style="margin-top: 20px; margin-left: 10px; font-size: 22px" class="nav-item nav-link" href="#me">ABOUT
           US</a>
-        <a style="margin-top: 20px; margin-left: 10px; font-size: 22px" class="nav-item nav-link" href="#">PROJECTS</a>
-        <a style="margin-top: 20px; margin-left: 10px; font-size: 22px" class="nav-item nav-link"
+        <a id="text" style="margin-top: 20px; margin-left: 10px; font-size: 22px" class="nav-item nav-link" href="#">PROJECTS</a>
+        <a id="text" style="margin-top: 20px; margin-left: 10px; font-size: 22px" class="nav-item nav-link"
           href="#service">SERVICES</a>
-        <a style="margin-top: 20px; margin-left: 10px; font-size: 22px" class="nav-item nav-link"
+        <a id="text" style="margin-top: 20px; margin-left: 10px; font-size: 22px" class="nav-item nav-link"
           href="#contact-us">CONTACT US</a>
+        <div id="text" class="switch">Dark mode:              
+          <span id="text" class="inner-switch">OFF</span>
+        </div>
       </div>
     </div>
   </nav>
+  </div>
 
   <br>
 
@@ -98,12 +103,12 @@
       <a class="carousel-control-prev" href="#carousel-example-2" role="button" data-slide="prev">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
         <span class="sr-only text-dark">
-          <h3> Previous </h3>
+          <h3></h3>
         </span>
       </a>
       <a class="carousel-control-next" href="#carousel-example-2" role="button" data-slide="next">
         <span class="sr-only text-dark ">
-          <h3>Next</h3>
+          <h3></h3>
         </span>
         <span class="carousel-control-next-icon icon"></span>
 
@@ -119,8 +124,8 @@
 
   <!-- Button trigger modal -->
   <div class="d-flex justify-content-center">
-    <button type="button" class="btn btn-warning btn-lg rounded-pill" data-toggle="modal" data-target="#exampleModal">
-      <b>Get in Touch with us </b>
+    <button id="get_in_touch" type="button"  class="btn btn-warning btn-lg rounded-pill" data-toggle="modal" data-target="#exampleModal">
+      <b id="text">Get in Touch with us </b>
     </button>
   </div>
 
@@ -356,35 +361,27 @@
 
       <div class="col">
         <div class="card h-100 border-warning">
-          <img class="card-img-top" src="static/coastal.jpg" alt="Card image cap">
+          <img class="card-img-top" src="static/commercial.jpeg" alt="Card image cap">
           <div class="card-body">
-            <h5 class="card-title">Commercial Work</h5>
-            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
-              content. This content is a little bit longer.</p>
-            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            <h3 class="card-title">Commercial Work</h5>
           </div>
         </div>
       </div>
 
       <div class="col">
         <div class="card h-100 border-warning">
-          <img class="card-img-top" src="static/coastal.jpg" alt="Card image cap">
+          <img class="card-img-top" src="static/residential.jpeg" alt="Card image cap">
           <div class="card-body">
-            <h5 class="card-title">Residential Work</h5>
-            <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            <h3 class="card-title">Residential Work</h5>
           </div>
         </div>
       </div>
 
       <div class="col">
         <div class="card h-100 border-warning">
-          <img class="card-img-top" src="static/coastal.jpg" alt="Card image cap">
+          <img class="card-img-top" src="static/corporate.jpeg" alt="Card image cap">
           <div class="card-body">
-            <h5 class="card-title">Corporate Work</h5>
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
-              content. This card has even longer content than the first to show that equal height action.</p>
-            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            <h3 class="card-title">Corporate Work</h5>
           </div>
         </div>
       </div>
@@ -406,14 +403,7 @@
           <div class="card mb-4 shadow-sm">
             <img class="card-img-top" src="static/modern.jpg" data-holder-rendered="true">
             <div class="card-body">
-              <p class="card-text">This is an example of residence card</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Select</button>
-                </div>
-                <small class="text-muted">Some Text</small>
-              </div>
+              <h3>Residence card</h3>
             </div>
           </div>
         </div>
@@ -421,15 +411,7 @@
           <div class="card mb-4 shadow-sm">
             <img class="card-img-top" src="static/industrial.jpg" data-holder-rendered="true">
             <div class="card-body">
-              <p class="card-text">This is a lavish style Living Room created by one of the biggest and well known
-                architect out there.</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Select</button>
-                </div>
-                <small class="text-muted">some text</small>
-              </div>
+              <h3>Lavish style living Room</h3>
             </div>
           </div>
         </div>
@@ -437,15 +419,7 @@
           <div class="card mb-4 shadow-sm">
             <img class="card-img-top" src="static/WWWW.png" data-holder-rendered="true">
             <div class="card-body">
-              <p class="card-text">So whether you are looking for a design idea for your living room or the what to
-                prepare for an unforgettable breakfast soirée, you should check out this decor.</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Select</button>
-                </div>
-                <small class="text-muted">9 mins</small>
-              </div>
+              <h3 class="card-text">You should check out this decor.</h3>
             </div>
           </div>
         </div>
@@ -454,15 +428,9 @@
           <div class="card mb-4 shadow-sm">
             <img class="card-img-top" src="static/QQQQ.jpg" data-holder-rendered="true">
             <div class="card-body">
-              <p class="card-text">A beautifully designed structure with a modern simplicity to it and crisp inspiring
-                imagery. We aim to inspire every aspect of living a better daily life.</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Select</button>
-                </div>
-                <small class="text-muted">9 mins</small>
-              </div>
+              <h3 class="card-text">A beautifully designed structure inspiring
+                imagery</h3>
+            
             </div>
           </div>
         </div>
@@ -470,15 +438,8 @@
           <div class="card mb-4 shadow-sm">
             <img class="card-img-top" src="pic5.jpg" data-holder-rendered="true">
             <div class="card-body">
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
-                content. This content is a little bit longer.</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Select</button>
-                </div>
-                <small class="text-muted">9 mins</small>
-              </div>
+              <h3 class="card-text">This is a wider card with supporting text</h3>
+              
             </div>
           </div>
         </div>
@@ -486,15 +447,8 @@
           <div class="card mb-4 shadow-sm">
             <img class="card-img-top" src="pic6.jpg" data-holder-rendered="true">
             <div class="card-body">
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
-                content. This content is a little bit longer.</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Select</button>
-                </div>
-                <small class="text-muted">9 mins</small>
-              </div>
+              <h3 class="card-text">This is a wider card with supporting text</h3>
+              
             </div>
           </div>
         </div>
@@ -503,15 +457,8 @@
           <div class="card mb-4 shadow-sm">
             <img class="card-img-top" src="pic7.jpg" data-holder-rendered="true">
             <div class="card-body">
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
-                content. This content is a little bit longer.</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Select</button>
-                </div>
-                <small class="text-muted">9 mins</small>
-              </div>
+              <h3 class="card-text">This is a wider card with supporting text</h3>
+              
             </div>
           </div>
         </div>
@@ -519,15 +466,8 @@
           <div class="card mb-4 shadow-sm">
             <img class="card-img-top" src="pic8.jpg" data-holder-rendered="true">
             <div class="card-body">
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
-                content. This content is a little bit longer.</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Select</button>
-                </div>
-                <small class="text-muted">9 mins</small>
-              </div>
+              <h3 class="card-text">This is a wider card with supporting text</h3>
+              
             </div>
           </div>
         </div>
@@ -535,15 +475,8 @@
           <div class="card mb-4 shadow-sm">
             <img class="card-img-top" src="pic9.jpg" data-holder-rendered="t9ue">
             <div class="card-body">
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
-                content. This content is a little bit longer.</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Select</button>
-                </div>
-                <small class="text-muted">9 mins</small>
-              </div>
+              <h3 class="card-text">This is a wider card with supporting text</h3>
+              
             </div>
           </div>
         </div>
