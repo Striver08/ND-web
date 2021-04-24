@@ -73,6 +73,15 @@ body {
   opacity: 70%;
 }
 
+footer {
+  opacity: 90%;
+}
+
+.text-uppercase {
+  color: grey;
+  font-family: "Times New Roman", Times, serif;
+}
+
 @keyframes fadeOut {
   100% {
     opacity: 0;
