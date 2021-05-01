@@ -92,11 +92,12 @@ body {
 }
 
 footer {
-  opacity: 90%;
+  opacity: 100%;
 }
 
 .text-uppercase {
-  color: grey;
+  font-weight: bolder;
+  color: black;
   font-family: "Times New Roman", Times, serif;
 }
 
