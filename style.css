@@ -54,6 +54,11 @@ body {
   color: black;
 }
 
+.carousel {
+  margin-left: 5em;
+  margin-right: 5em;
+}
+
 .loader {
   position: fixed;
   z-index: 99;
